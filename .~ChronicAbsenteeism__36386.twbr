@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0420.1112                               -->
+<workbook source-build='2021.1.1 (20211.21.0420.1112)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.SingleValuePerNestSorting.true...SingleValuePerNestSorting />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='ChronicAbsenteeism_16209360445550' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='modern' />
+  <datasources>
+    <datasource caption='expAllYears' inline='true' name='federated.0m9lrii1iw977x1augemy0y5nxbf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='exp1920' name='textscan.1xtu45l133ogx91h0b7k21di0pwz'>
+            <connection class='textscan' directory='Data' filename='chrabs1617.txt' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='Union' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='AcademicYear' />
+            <column datatype='string' name='AggregateLevel' />
+            <column datatype='integer' name='CountyCode' />
+            <column datatype='string' name='DistrictCode' />
+            <column datatype='string' name='SchoolCode' />
+            <column datatype='string' name='CountyName' />
+            <column datatype='string' name='DistrictName' />
+            <column datatype='string' name='SchoolName' />
+            <column datatype='string' name='CharterYN' />
+            <column datatype='string' name='ReportingCategory' />
+            <column datatype='string' name='CumulativeEnrollment' />
+            <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' />
+            <column datatype='string' name='ChronicAbsenteeismCount' />
+            <column datatype='string' name='ChronicAbsenteeismRate' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1617.txt' table='[chrabs1617#txt]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+              <column datatype='string' name='AcademicYear' ordinal='0' />
+              <column datatype='string' name='AggregateLevel' ordinal='1' />
+              <column datatype='integer' name='CountyCode' ordinal='2' />
+              <column datatype='string' name='DistrictCode' ordinal='3' />
+              <column datatype='string' name='SchoolCode' ordinal='4' />
+              <column datatype='string' name='CountyName' ordinal='5' />
+              <column datatype='string' name='DistrictName' ordinal='6' />
+              <column datatype='string' name='SchoolName' ordinal='7' />
+              <column datatype='string' name='CharterYN' ordinal='8' />
+              <column datatype='string' name='ReportingCategory' ordinal='9' />
+              <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+              <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+              <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+              <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1718.txt' table='[chrabs1718#txt]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+              <column datatype='string' name='AcademicYear' ordinal='0' />
+              <column datatype='string' name='AggregateLevel' ordinal='1' />
+              <column datatype='integer' name='CountyCode' ordinal='2' />
+              <column datatype='string' name='DistrictCode' ordinal='3' />
+              <column datatype='string' name='SchoolCode' ordinal='4' />
+              <column datatype='string' name='CountyName' ordinal='5' />
+              <column datatype='string' name='DistrictName' ordinal='6' />
+              <column datatype='string' name='SchoolName' ordinal='7' />
+              <column datatype='string' name='CharterYN' ordinal='8' />
+              <column datatype='string' name='ReportingCategory' ordinal='9' />
+              <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+              <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+              <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+              <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1819.txt' table='[chrabs1819#txt]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+              <column datatype='string' name='AcademicYear' ordinal='0' />
+              <column datatype='string' name='AggregateLevel' ordinal='1' />
+              <column datatype='integer' name='CountyCode' ordinal='2' />
+              <column datatype='string' name='DistrictCode' ordinal='3' />
+              <column datatype='string' name='SchoolCode' ordinal='4' />
+              <column datatype='string' name='CountyName' ordinal='5' />
+              <column datatype='string' name='DistrictName' ordinal='6' />
+              <column datatype='string' name='SchoolName' ordinal='7' />
+              <column datatype='string' name='CharterYN' ordinal='8' />
+              <column datatype='string' name='ReportingCategory' ordinal='9' />
+              <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+              <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+              <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+              <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='Union' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='string' name='AcademicYear' />
+            <column datatype='string' name='AggregateLevel' />
+            <column datatype='integer' name='CountyCode' />
+            <column datatype='string' name='DistrictCode' />
+            <column datatype='string' name='SchoolCode' />
+            <column datatype='string' name='CountyName' />
+            <column datatype='string' name='DistrictName' />
+            <column datatype='string' name='SchoolName' />
+            <column datatype='string' name='CharterYN' />
+            <column datatype='string' name='ReportingCategory' />
+            <column datatype='string' name='CumulativeEnrollment' />
+            <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' />
+            <column datatype='string' name='ChronicAbsenteeismCount' />
+            <column datatype='string' name='ChronicAbsenteeismRate' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1617.txt' table='[chrabs1617#txt]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+              <column datatype='string' name='AcademicYear' ordinal='0' />
+              <column datatype='string' name='AggregateLevel' ordinal='1' />
+              <column datatype='integer' name='CountyCode' ordinal='2' />
+              <column datatype='string' name='DistrictCode' ordinal='3' />
+              <column datatype='string' name='SchoolCode' ordinal='4' />
+              <column datatype='string' name='CountyName' ordinal='5' />
+              <column datatype='string' name='DistrictName' ordinal='6' />
+              <column datatype='string' name='SchoolName' ordinal='7' />
+              <column datatype='string' name='CharterYN' ordinal='8' />
+              <column datatype='string' name='ReportingCategory' ordinal='9' />
+              <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+              <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+              <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+              <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1718.txt' table='[chrabs1718#txt]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+              <column datatype='string' name='AcademicYear' ordinal='0' />
+              <column datatype='string' name='AggregateLevel' ordinal='1' />
+              <column datatype='integer' name='CountyCode' ordinal='2' />
+              <column datatype='string' name='DistrictCode' ordinal='3' />
+              <column datatype='string' name='SchoolCode' ordinal='4' />
+              <column datatype='string' name='CountyName' ordinal='5' />
+              <column datatype='string' name='DistrictName' ordinal='6' />
+              <column datatype='string' name='SchoolName' ordinal='7' />
+              <column datatype='string' name='CharterYN' ordinal='8' />
+              <column datatype='string' name='ReportingCategory' ordinal='9' />
+              <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+              <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+              <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+              <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1819.txt' table='[chrabs1819#txt]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+              <column datatype='string' name='AcademicYear' ordinal='0' />
+              <column datatype='string' name='AggregateLevel' ordinal='1' />
+              <column datatype='integer' name='CountyCode' ordinal='2' />
+              <column datatype='string' name='DistrictCode' ordinal='3' />
+              <column datatype='string' name='SchoolCode' ordinal='4' />
+              <column datatype='string' name='CountyName' ordinal='5' />
+              <column datatype='string' name='DistrictName' ordinal='6' />
+              <column datatype='string' name='SchoolName' ordinal='7' />
+              <column datatype='string' name='CharterYN' ordinal='8' />
+              <column datatype='string' name='ReportingCategory' ordinal='9' />
+              <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+              <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+              <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+              <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Union]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AcademicYear</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AcademicYear]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>AcademicYear</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AggregateLevel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AggregateLevel]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>AggregateLevel</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CountyCode]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>CountyCode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DistrictCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DistrictCode]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>DistrictCode</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SchoolCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SchoolCode]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>SchoolCode</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CountyName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CountyName]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>CountyName</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DistrictName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DistrictName]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>DistrictName</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SchoolName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SchoolName]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>SchoolName</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CharterYN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CharterYN]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>CharterYN</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ReportingCategory</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ReportingCategory]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>ReportingCategory</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CumulativeEnrollment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CumulativeEnrollment]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>CumulativeEnrollment</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ChronicAbsenteeismEligibleCumulativeEnrollment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ChronicAbsenteeismEligibleCumulativeEnrollment]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>ChronicAbsenteeismEligibleCumulativeEnrollment</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ChronicAbsenteeismCount</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ChronicAbsenteeismCount]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>ChronicAbsenteeismCount</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ChronicAbsenteeismRate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ChronicAbsenteeismRate]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>ChronicAbsenteeismRate</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_F4DD110BFBD8451CB0D46E7E9F527A30]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Academic Year' datatype='string' name='[AcademicYear]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;2011-12&quot;' value='2012' />
+          <alias key='&quot;2012-13&quot;' value='2013' />
+          <alias key='&quot;2013-14&quot;' value='2014' />
+          <alias key='&quot;2014-15&quot;' value='2015' />
+          <alias key='&quot;2015-16&quot;' value='2016' />
+          <alias key='&quot;2016-17&quot;' value='2017' />
+          <alias key='&quot;2017-18&quot;' value='2018' />
+          <alias key='&quot;2018-19&quot;' value='2019' />
+          <alias key='&quot;2019-20&quot;' value='2020' />
+        </aliases>
+      </column>
+      <column caption='Aggregate Level' datatype='string' name='[AggregateLevel]' role='dimension' type='nominal' />
+      <column caption='CalculatedAbsenteeismRate' datatype='real' name='[Calculation_2524408370904723473]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([ChronicAbsenteeismCount])/[Calculation_3865777354016043008]' />
+      </column>
+      <column caption='ConvertedAbsenteeismRate' datatype='real' name='[Calculation_2524408370905784338]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([ChronicAbsenteeismRate])' />
+      </column>
+      <column caption='District' datatype='string' name='[Calculation_28077152855384064]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ISNULL([DistrictName]) AND [CountyName]=&apos;Santa Cruz&apos; THEN &apos;Santa Cruz County&apos;&#10;ELSEIF ISNULL([DistrictName]) AND [CountyName]==&apos;State&apos; THEN &apos;State&apos;&#10;ELSE [DistrictName]&#10;END' />
+      </column>
+      <column caption='ExpulsionRate' datatype='real' name='[Calculation_28077152862703617]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Unduplicated Count of Students Expelled (Total)]/[Calculation_3865777354016043008]' />
+      </column>
+      <column caption='Enrollment' datatype='integer' datatype-customized='true' name='[Calculation_3865777354016043008]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='INT(IFNULL([CumulativeEnrollment],[CumulativeEnrollment]))' />
+      </column>
+      <column caption='Charter YN' datatype='string' name='[CharterYN]' role='dimension' type='nominal' />
+      <column caption='County Name' datatype='string' name='[CountyName]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Cumulative Enrollment1' datatype='string' name='[CumulativeEnrollment]' role='dimension' type='nominal' />
+      <column caption='District Name' datatype='string' name='[DistrictName]' role='dimension' type='nominal' />
+      <column datatype='string' name='[ReportingCategory]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;GF&quot;' value='Female' />
+          <alias key='&quot;GM&quot;' value='Male' />
+          <alias key='&quot;GX&quot;' value='Non-Binary Gender' />
+          <alias key='&quot;RA&quot;' value='Asian' />
+          <alias key='&quot;RB&quot;' value='African American' />
+          <alias key='&quot;RD&quot;' value='Not Reported' />
+          <alias key='&quot;RF&quot;' value='Filipino' />
+          <alias key='&quot;RH&quot;' value='Hispanic or Latino' />
+          <alias key='&quot;RI&quot;' value='American Indian or Alaska Native' />
+          <alias key='&quot;RP&quot;' value='Pacific Islander' />
+          <alias key='&quot;RT&quot;' value='Two or More Races' />
+          <alias key='&quot;RW&quot;' value='White' />
+          <alias key='&quot;SD&quot;' value='Students with Disabilities' />
+          <alias key='&quot;SE&quot;' value='English Learners' />
+          <alias key='&quot;SF&quot;' value='Foster' />
+          <alias key='&quot;SH&quot;' value='Homeless' />
+          <alias key='&quot;SM&quot;' value='Migrant' />
+          <alias key='&quot;SS&quot;' value='Socioeconomically Disadvantaged' />
+          <alias key='&quot;TA&quot;' value='All Groups' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Union' datatype='table' name='[__tableau_internal_object_id__].[_F4DD110BFBD8451CB0D46E7E9F527A30]' role='measure' type='quantitative' />
+      <column-instance column='[ReportingCategory]' derivation='None' name='[none:ReportingCategory:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='false' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/ChronicAbsenteeism.twb Files/federated.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>AcademicYear</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AcademicYear]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AcademicYear</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AggregateLevel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[AggregateLevel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AggregateLevel</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CountyCode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CountyCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CountyCode</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Union</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DistrictCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DistrictCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DistrictCode</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3453</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SchoolCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SchoolCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SchoolCode</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63006</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CountyName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CountyName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CountyName</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DistrictName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DistrictName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DistrictName</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3427</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SchoolName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SchoolName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SchoolName</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48357</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CharterYN</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CharterYN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CharterYN</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ReportingCategory</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ReportingCategory]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ReportingCategory</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CumulativeEnrollment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CumulativeEnrollment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CumulativeEnrollment</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7005</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ChronicAbsenteeismEligibleCumulativeEnrollment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ChronicAbsenteeismEligibleCumulativeEnrollment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ChronicAbsenteeismEligibleCumulativeEnrollment</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7080</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ChronicAbsenteeismCount</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ChronicAbsenteeismCount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ChronicAbsenteeismCount</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2335</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ChronicAbsenteeismRate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ChronicAbsenteeismRate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ChronicAbsenteeismRate</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2433</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Union</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ReportingCategory:nk]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;SD&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;SF&quot;</bucket>
+            </map>
+            <map to='#8c564b'>
+              <bucket>&quot;SS&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;SM&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;SH&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;TA&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;SE&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Union' id='_F4DD110BFBD8451CB0D46E7E9F527A30'>
+            <properties context=''>
+              <relation all='true' name='Union' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='string' name='AcademicYear' />
+                  <column datatype='string' name='AggregateLevel' />
+                  <column datatype='integer' name='CountyCode' />
+                  <column datatype='string' name='DistrictCode' />
+                  <column datatype='string' name='SchoolCode' />
+                  <column datatype='string' name='CountyName' />
+                  <column datatype='string' name='DistrictName' />
+                  <column datatype='string' name='SchoolName' />
+                  <column datatype='string' name='CharterYN' />
+                  <column datatype='string' name='ReportingCategory' />
+                  <column datatype='string' name='CumulativeEnrollment' />
+                  <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' />
+                  <column datatype='string' name='ChronicAbsenteeismCount' />
+                  <column datatype='string' name='ChronicAbsenteeismRate' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1617.txt' table='[chrabs1617#txt]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                    <column datatype='string' name='AcademicYear' ordinal='0' />
+                    <column datatype='string' name='AggregateLevel' ordinal='1' />
+                    <column datatype='integer' name='CountyCode' ordinal='2' />
+                    <column datatype='string' name='DistrictCode' ordinal='3' />
+                    <column datatype='string' name='SchoolCode' ordinal='4' />
+                    <column datatype='string' name='CountyName' ordinal='5' />
+                    <column datatype='string' name='DistrictName' ordinal='6' />
+                    <column datatype='string' name='SchoolName' ordinal='7' />
+                    <column datatype='string' name='CharterYN' ordinal='8' />
+                    <column datatype='string' name='ReportingCategory' ordinal='9' />
+                    <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+                    <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+                    <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+                    <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1718.txt' table='[chrabs1718#txt]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                    <column datatype='string' name='AcademicYear' ordinal='0' />
+                    <column datatype='string' name='AggregateLevel' ordinal='1' />
+                    <column datatype='integer' name='CountyCode' ordinal='2' />
+                    <column datatype='string' name='DistrictCode' ordinal='3' />
+                    <column datatype='string' name='SchoolCode' ordinal='4' />
+                    <column datatype='string' name='CountyName' ordinal='5' />
+                    <column datatype='string' name='DistrictName' ordinal='6' />
+                    <column datatype='string' name='SchoolName' ordinal='7' />
+                    <column datatype='string' name='CharterYN' ordinal='8' />
+                    <column datatype='string' name='ReportingCategory' ordinal='9' />
+                    <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+                    <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+                    <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+                    <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1xtu45l133ogx91h0b7k21di0pwz' name='chrabs1819.txt' table='[chrabs1819#txt]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                    <column datatype='string' name='AcademicYear' ordinal='0' />
+                    <column datatype='string' name='AggregateLevel' ordinal='1' />
+                    <column datatype='integer' name='CountyCode' ordinal='2' />
+                    <column datatype='string' name='DistrictCode' ordinal='3' />
+                    <column datatype='string' name='SchoolCode' ordinal='4' />
+                    <column datatype='string' name='CountyName' ordinal='5' />
+                    <column datatype='string' name='DistrictName' ordinal='6' />
+                    <column datatype='string' name='SchoolName' ordinal='7' />
+                    <column datatype='string' name='CharterYN' ordinal='8' />
+                    <column datatype='string' name='ReportingCategory' ordinal='9' />
+                    <column datatype='string' name='CumulativeEnrollment' ordinal='10' />
+                    <column datatype='string' name='ChronicAbsenteeismEligibleCumulativeEnrollment' ordinal='11' />
+                    <column datatype='string' name='ChronicAbsenteeismCount' ordinal='12' />
+                    <column datatype='string' name='ChronicAbsenteeismRate' ordinal='13' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='ChronicAbsentismRates'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Chronic Absenteeism Rates</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='expAllYears' name='federated.0m9lrii1iw977x1augemy0y5nxbf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m9lrii1iw977x1augemy0y5nxbf'>
+            <column caption='Academic Year' datatype='string' name='[AcademicYear]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;2011-12&quot;' value='2012' />
+                <alias key='&quot;2012-13&quot;' value='2013' />
+                <alias key='&quot;2013-14&quot;' value='2014' />
+                <alias key='&quot;2014-15&quot;' value='2015' />
+                <alias key='&quot;2015-16&quot;' value='2016' />
+                <alias key='&quot;2016-17&quot;' value='2017' />
+                <alias key='&quot;2017-18&quot;' value='2018' />
+                <alias key='&quot;2018-19&quot;' value='2019' />
+                <alias key='&quot;2019-20&quot;' value='2020' />
+              </aliases>
+            </column>
+            <column caption='Aggregate Level' datatype='string' name='[AggregateLevel]' role='dimension' type='nominal' />
+            <column caption='CalculatedAbsenteeismRate' datatype='real' name='[Calculation_2524408370904723473]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT([ChronicAbsenteeismCount])/[Calculation_3865777354016043008]' />
+            </column>
+            <column caption='District' datatype='string' name='[Calculation_28077152855384064]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ISNULL([DistrictName]) AND [CountyName]=&apos;Santa Cruz&apos; THEN &apos;Santa Cruz County&apos;&#10;ELSEIF ISNULL([DistrictName]) AND [CountyName]==&apos;State&apos; THEN &apos;State&apos;&#10;ELSE [DistrictName]&#10;END' />
+            </column>
+            <column caption='Enrollment' datatype='integer' datatype-customized='true' name='[Calculation_3865777354016043008]' role='dimension' type='quantitative'>
+              <calculation class='tableau' formula='INT(IFNULL([CumulativeEnrollment],[CumulativeEnrollment]))' />
+            </column>
+            <column caption='Charter YN' datatype='string' name='[CharterYN]' role='dimension' type='nominal' />
+            <column datatype='string' name='[ChronicAbsenteeismCount]' role='dimension' type='nominal' />
+            <column caption='County Name' datatype='string' name='[CountyName]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Cumulative Enrollment1' datatype='string' name='[CumulativeEnrollment]' role='dimension' type='nominal' />
+            <column caption='District Name' datatype='string' name='[DistrictName]' role='dimension' type='nominal' />
+            <column datatype='string' name='[ReportingCategory]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;GF&quot;' value='Female' />
+                <alias key='&quot;GM&quot;' value='Male' />
+                <alias key='&quot;GX&quot;' value='Non-Binary Gender' />
+                <alias key='&quot;RA&quot;' value='Asian' />
+                <alias key='&quot;RB&quot;' value='African American' />
+                <alias key='&quot;RD&quot;' value='Not Reported' />
+                <alias key='&quot;RF&quot;' value='Filipino' />
+                <alias key='&quot;RH&quot;' value='Hispanic or Latino' />
+                <alias key='&quot;RI&quot;' value='American Indian or Alaska Native' />
+                <alias key='&quot;RP&quot;' value='Pacific Islander' />
+                <alias key='&quot;RT&quot;' value='Two or More Races' />
+                <alias key='&quot;RW&quot;' value='White' />
+                <alias key='&quot;SD&quot;' value='Students with Disabilities' />
+                <alias key='&quot;SE&quot;' value='English Learners' />
+                <alias key='&quot;SF&quot;' value='Foster' />
+                <alias key='&quot;SH&quot;' value='Homeless' />
+                <alias key='&quot;SM&quot;' value='Migrant' />
+                <alias key='&quot;SS&quot;' value='Socioeconomically Disadvantaged' />
+                <alias key='&quot;TA&quot;' value='All Groups' />
+              </aliases>
+            </column>
+            <column-instance column='[AcademicYear]' derivation='Count' name='[cnt:AcademicYear:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AcademicYear]' derivation='None' name='[none:AcademicYear:nk]' pivot='key' type='nominal' />
+            <column-instance column='[AggregateLevel]' derivation='None' name='[none:AggregateLevel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2524408370904723473]' derivation='None' name='[none:Calculation_2524408370904723473:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_28077152855384064]' derivation='None' name='[none:Calculation_28077152855384064:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_3865777354016043008]' derivation='None' name='[none:Calculation_3865777354016043008:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CharterYN]' derivation='None' name='[none:CharterYN:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ChronicAbsenteeismCount]' derivation='None' name='[none:ChronicAbsenteeismCount:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CountyName]' derivation='None' name='[none:CountyName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ReportingCategory]' derivation='None' name='[none:ReportingCategory:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2524408370904723473]' derivation='Sum' name='[sum:Calculation_2524408370904723473:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AcademicYear:nk]'>
+            <groupfilter from='&quot;2016-17&quot;' function='range' level='[none:AcademicYear:nk]' to='&quot;2018-19&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AggregateLevel:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:AggregateLevel:nk]' member='&quot;C&quot;' />
+              <groupfilter function='member' level='[none:AggregateLevel:nk]' member='&quot;D&quot;' />
+              <groupfilter function='member' level='[none:AggregateLevel:nk]' member='&quot;T&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_2524408370904723473:qk]' included-values='all' />
+          <filter class='categorical' column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_28077152855384064:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Calculation_28077152855384064:nk]' member='&quot;Pajaro Valley Unified&quot;' />
+              <groupfilter function='member' level='[none:Calculation_28077152855384064:nk]' member='&quot;Santa Cruz County&quot;' />
+              <groupfilter function='member' level='[none:Calculation_28077152855384064:nk]' member='&quot;State&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_28077152855384064:nk]' direction='DESC' using='[federated.0m9lrii1iw977x1augemy0y5nxbf].[cnt:AcademicYear:qk]' />
+          <filter class='categorical' column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:CharterYN:nk]'>
+            <groupfilter function='member' level='[none:CharterYN:nk]' member='&quot;All&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:CountyName:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:CountyName:nk]' member='&quot;Santa Cruz&quot;' />
+              <groupfilter function='member' level='[none:CountyName:nk]' member='&quot;State&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:ReportingCategory:nk]' member='&quot;SD&quot;' />
+              <groupfilter function='member' level='[none:ReportingCategory:nk]' member='&quot;SE&quot;' />
+              <groupfilter function='member' level='[none:ReportingCategory:nk]' member='&quot;SF&quot;' />
+              <groupfilter function='member' level='[none:ReportingCategory:nk]' member='&quot;SH&quot;' />
+              <groupfilter function='member' level='[none:ReportingCategory:nk]' member='&quot;SM&quot;' />
+              <groupfilter function='member' level='[none:ReportingCategory:nk]' member='&quot;SS&quot;' />
+              <groupfilter function='member' level='[none:ReportingCategory:nk]' member='&quot;TA&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]' direction='DESC' using='[federated.0m9lrii1iw977x1augemy0y5nxbf].[cnt:AcademicYear:qk]' />
+          <_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AggregateLevel:nk]' direction='ASC' measure-to-sort-by='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_28077152855384064:nk]' shelf='rows' />
+          </_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:CountyName:nk]</column>
+            <column>[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AggregateLevel:nk]</column>
+            <column>[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:CharterYN:nk]</column>
+            <column>[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]</column>
+            <column>[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_28077152855384064:nk]</column>
+            <column>[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AcademicYear:nk]</column>
+            <column>[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_2524408370904723473:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk]' value='48' />
+            <format attr='title' class='0' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AggregateLevel:nk]' value='false' />
+            <format attr='text-format' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk]' value='p0%' />
+            <format attr='font-size' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]' value='10' />
+            <format attr='font-size' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk]' value='10' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='in-tooltip' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AggregateLevel:nk]' value='false' />
+            <format attr='in-tooltip' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_28077152855384064:nk]' value='false' />
+            <format attr='in-tooltip' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]' value='false' />
+            <format attr='in-tooltip' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk]' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]' value='Student Groups' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]' />
+              <text column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ChronicAbsenteeismCount:nk]' />
+              <text column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_3865777354016043008:qk]' />
+              <text column='[federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Academic Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AcademicYear:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Chronic Absenteeism Count:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ChronicAbsenteeismCount:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Enrollment Count:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_3865777354016043008:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Chronic Absenteeism Rate:</run>
+                <run>Æ&#9;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ChronicAbsenteeismCount:nk]</run>
+                <run>&gt; | &lt;</run>
+                <run>[federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>(([federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AggregateLevel:nk] / [federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_28077152855384064:nk]) * [federated.0m9lrii1iw977x1augemy0y5nxbf].[sum:Calculation_2524408370904723473:qk])</rows>
+        <cols>([federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AcademicYear:nk] / [federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk])</cols>
+      </table>
+      <simple-id uuid='{CBC639EF-3DC1-4274-AB89-E52C7B575BE2}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='ChronicAbsentismRates'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]' show-title='false' type='color' />
+            <card mode='checkdropdown' param='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:AcademicYear:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:Calculation_28077152855384064:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:ReportingCategory:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.0m9lrii1iw977x1augemy0y5nxbf].[none:CharterYN:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{02A9AD9E-0394-4A7A-B18C-74B4660E6A04}' />
+    </window>
+  </windows>
+</workbook>
